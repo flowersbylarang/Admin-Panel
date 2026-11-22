@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Instrument Sans", "Segoe UI", sans-serif;
+  color: #173b39;
+  background: #f7f8f5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --ink: #173b39;
+  --teal: #07555a;
+  --teal-dark: #06484d;
+  --leaf: #527b57;
+  --leaf-soft: #e9f1e8;
+  --rose: #a63e69;
+  --rose-soft: #f8eaf0;
+  --paper: #fff;
+  --canvas: #f7f8f5;
+  --line: #e4e9e4;
+  --muted: #687772;
+  --gold: #9b6d22;
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: var(--canvas); }
+button, input, textarea, select { font: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 3px solid #4b9992; outline-offset: 2px; }
+::selection { background: #cfe4dc; }
+.safe-bottom { padding-bottom: max(1rem, env(safe-area-inset-bottom)); }
+.scrollbar-thin { scrollbar-width: thin; }
+.lift-in { animation: lift-in .22s ease-out both; }
+@keyframes lift-in { from { opacity: .5; transform: translateY(5px) } to { opacity: 1; transform: translateY(0) } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
