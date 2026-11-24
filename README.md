@@ -1,4 +1,4 @@
-# Flowers by Lara staff workspace
+# Flowers by Lara Admin Portal
 
 Mobile-first admin UI for the Flowers by Lara team, built as a separate Vite app with React, TypeScript, Tailwind CSS, and React Router.
 
